@@ -6,13 +6,11 @@ import java.awt.*;
  * Created by andrew_briasco on 3/14/17.
  */
 public class Main extends JPanel {
-    public static final int FRAMEWIDTH = 500, FRAMEHEIGHT = 800;
+    public static final int FRAMEWIDTH = 500, FRAMEHEIGHT = 700;
 
     public Main() {
+
     }
-
-
-
 
 
 
@@ -21,7 +19,7 @@ public class Main extends JPanel {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D)g;
 
-        g2.drawRect(FRAMEWIDTH-4, FRAMEHEIGHT-4, 2, 2);
+        g2.drawRect(FRAMEWIDTH-4, FRAMEHEIGHT-4, 2, 1);
     }
 
 
@@ -34,9 +32,9 @@ public class Main extends JPanel {
         Main panel = new Main();
         panel.setSize(FRAMEWIDTH, FRAMEHEIGHT);
 
-//        panel.setFocusable(true);
+        panel.setFocusable(true);
         panel.grabFocus();
-//        window.setLocationRelativeTo(null);
+        window.setLocationRelativeTo(null);
         window.add(panel);
         window.setVisible(true);
         window.setResizable(false);
