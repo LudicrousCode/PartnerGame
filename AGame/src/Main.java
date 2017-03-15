@@ -21,7 +21,7 @@ public class Main extends JPanel {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D)g;
 
-        g2.drawRect(FRAMEWIDTH-2, FRAMEHEIGHT-2, 2, 2);
+        g2.drawRect(FRAMEWIDTH-4, FRAMEHEIGHT-4, 2, 2);
     }
 
 
